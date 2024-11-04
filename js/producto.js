@@ -33,12 +33,12 @@ function deleteProducto(id) {
 }
 
 function guardarProducto() {
-    let pro = producto.getElementById('producto-p').value
-    let cat = categoria.getElementById('categoria-c').value
-    let can = cantidad.getElementById('cantidad-c').value
-    let med = medida.getElementById('medida-m').value
-    let lot = lote.getElementById('lote-l').value
-    let ubi = ubicacion.getElementById('ubicacion-u').value
+    let pro = document.getElementById('producto-p').value
+    let cat = document.getElementById('categoria-c').value
+    let can = document.getElementById('cantidad-c').value
+    let med = document.getElementById('medida-m').value
+    let lot = document.getElementById('lote-l').value
+    let ubi = document.getElementById('ubicacion-u').value
     let data ={'producto':pro, 'categoria':cat, 'cantidad':can, 'medida':med, 'lote':lot, 'ubicacion':ubi}
     let request = sendRequest('producto/', 'POST', data);
     request.onload = function(){
