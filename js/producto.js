@@ -75,12 +75,12 @@ function cargarDatos(id) {
 
 
 function modificarProducto(id){
-    let nom = document.getElementById('producto-p').value
-    let ape = document.getElementById('categoria-c').value
-    let doc = document.getElementById('cantidad-c').value
-    let cor = document.getElementById('medida-m').value
-    let tel = document.getElementById('lote-l').value
-    let dir = document.getElementById('ubicacion-u').value
+    let pro = document.getElementById('producto-p').value
+    let cat = document.getElementById('categoria-c').value
+    let can = document.getElementById('cantidad-c').value
+    let med = document.getElementById('medida-m').value
+    let lot = document.getElementById('lote-l').value
+    let ubi = document.getElementById('ubicacion-u').value
     let data ={'producto':pro, 'categoria':cat, 'cantidad':can, 'medida':med, 'lote':lot, 'ubicacion':ubi}
     let request = sendRequest('producto/'+id, 'PUT', data);
     console.log(request)
